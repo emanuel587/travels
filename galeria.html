@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/galeria.css">
+  <title>Image Gallery</title>
+</head>
+<body>
+
+  <div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search for images">
+    <button onclick="searchPexelsImages()">Search</button>
+  </div>
+  <div id="gallery"></div>
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" class="modal-content">
+  </div>
+  <script src="js/galeria.js"></script>
+</body>
+</html>

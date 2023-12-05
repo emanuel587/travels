@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FBBF02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+#paypal-button-container {
+    margin:10px auto;
+}
+
+h1 {
+    font-size:50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul {
+    list-style-type: none;
+    padding: 70px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li {
+    margin: 5px 0;
+}
+.Logo {
+    position: absolute; /* Establece la posición absoluta para el logotipo */
+    top: 10px; /* Ajusta la posición desde la parte superior */
+    left: 10px; /* Ajusta la posición desde la izquierda */
+    width: 150px; /* Ajusta el ancho según tus necesidades */
+}

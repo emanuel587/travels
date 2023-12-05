@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Mapa y Galería de Imágenes</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+
+</head>
+<body>
+    
+    <div class="page-header"></div>
+    <div class="formulario-container">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="box">
+                        <h1 class="title">Encuentra un Lugar y Explora Imágenes</h1>
+                        <form id="Form">
+                            <div class="field">
+                                <label for="lugarInput" class="label">Ingresa el nombre del lugar:</label>
+                                <div class="control">
+                                    <input type="text" id="lugarInput" class="input" required>
+                                </div>
+                            </div>
+                            <div id="map" style="height: 400px;"></div>
+                            <div class="field">
+                                <div class="control">
+                                    <button type="button" id="buscarLugar" class="button is-primary" onclick="searchPexelsImages()">Buscar Lugar y Fotos</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery" class="gallery-container"></div>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+   <script src="js/img.js"></script>
+    <script defer src="js/practica.js"></script>
+</body>
+</html>

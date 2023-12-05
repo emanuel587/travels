@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.ticket-container {
+  width: 300px;
+  height: 100px;
+  background-color: #80deea;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  border: 3px solid rgba(0,0,0, .1);
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: #599ba3;
+  border-radius: 8px;
+}
+
+.content-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  padding: 5px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.25em;
+  color: #fff;
+}
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  padding: 5px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.25em;
+  color: #fff;
+  border-left: 1px dashed #fff;
+}
+
+.ticket-zigzag-left {
+    background: linear-gradient(-137deg, #80deea 6px, transparent 0) 0 5px, linear-gradient(320deg, #80deea 5px, #fff 0) 0 5px;
+    background-color: #80deea;
+    background-position: left bottom;
+    background-repeat: repeat-y;
+    background-size: 10px 10px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 10px;
+    height: 100%;
+}
+.ticket-zigzag-right {
+    background: linear-gradient(137deg, #80deea 6px, transparent 0) 0 5px, linear-gradient(-320deg, #80deea 5px, #fff 0) 0 5px;
+    background-color: #80deea;
+    background-position: right bottom;
+    background-repeat: repeat-y;
+    background-size: 10px 10px;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 10px;
+    height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FBBF02;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+#paypal-button-container {
+  margin:10px auto;
+}
+
+h1 {
+  font-size:50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul {
+  list-style-type: none;
+  padding: 70px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li {
+  margin: 5px 0;
+}
+.Logo {
+  position: absolute; /* Establece la posición absoluta para el logotipo */
+  top: 10px; /* Ajusta la posición desde la parte superior */
+  left: 10px; /* Ajusta la posición desde la izquierda */
+  width: 150px; /* Ajusta el ancho según tus necesidades */
+}
